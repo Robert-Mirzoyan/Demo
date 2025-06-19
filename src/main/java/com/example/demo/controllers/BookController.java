@@ -8,7 +8,7 @@ import org.springframework.ui.Model;
 @Controller
 public class BookController {
 
-    private BookRepository bookRepository;
+    private final BookRepository bookRepository;
 
     public BookController(BookRepository bookRepository) {
         this.bookRepository = bookRepository;

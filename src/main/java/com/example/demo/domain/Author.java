@@ -5,12 +5,14 @@ import java.util.Set;
 import java.util.HashSet;
 
 @Entity
+@Table(name = "author")
 public class Author {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Column(name = "first_name")
     private String firstName;
     private String lastName;
 
